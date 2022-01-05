@@ -1,14 +1,14 @@
 {
   "name": "@iopanda/strapi-crack-ee",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "description": "",
   "main": "index.js",
   "bin": {
     "strapi-crack": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node index.js init"
   },
-  "author": "",
+  "author": "iopanda",
   "license": "ISC"
 }
