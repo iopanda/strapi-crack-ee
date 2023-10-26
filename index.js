@@ -21,10 +21,10 @@ let fp = null
 let fx = null
 if(__dirname == cwd() && process.argv[2] == 'init'){
     fp = path.join(__dirname, "../../../license.txt")
-    fx = path.join(__dirname, "../../../node_modules/@strapi/strapi/lib/utils/resources/key.pub")
+    fx = path.join(__dirname, "../../../node_modules/@strapi/strapi/resources/key.pub")
 }else{
     fp = path.join(cwd(), 'license.txt')
-    fx = path.join(cwd(), 'node_modules/@strapi/strapi/lib/utils/resources/key.pub')
+    fx = path.join(cwd(), 'node_modules/@strapi/strapi/resources/key.pub')
 }
 fs.writeFileSync(fp, license)
 fs.writeFileSync(fx, publicKey)
